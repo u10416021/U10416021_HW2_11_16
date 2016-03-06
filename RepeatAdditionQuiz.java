@@ -4,7 +4,7 @@ import java.util.ArrayList;
 
 public class RepeatAdditionQuiz {
   public static void main(String[] args) {
-  	//Generating two intergers in the range 0-10 randomly.
+    //Generating two intergers in the range 0-10 randomly.
     int number1 = (int)(Math.random() * 10);
     int number2 = (int)(Math.random() * 10);
 
@@ -14,12 +14,12 @@ public class RepeatAdditionQuiz {
     //Create an arraylist
     ArrayList<Integer> list = new ArrayList<>();
 	
-	//Let user input the answer.
+    //Let user input the answer.
     System.out.print("What is " + number1 + " + " + number2 + "? ");
-   	int answer = input.nextInt(); 
+    int answer = input.nextInt(); 
 
-	//Use while loop to judge the situation.
-	while (number1 + number2 != answer) {
+    //Use while loop to judge the situation.
+    while (number1 + number2 != answer) {
         System.out.print("Wrong answer. Try again. What is " + number1 + " + " + number2 + "? ");
         //Add the former answer to the arraylist
         list.add(answer);
@@ -30,7 +30,7 @@ public class RepeatAdditionQuiz {
             System.out.println("You already entered " + answer);
         }
     }
-	//If the answer is correct show this message.
+    //If the answer is correct show this message.
     System.out.println("You got it!");
   }
 }
